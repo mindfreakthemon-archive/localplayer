@@ -1,0 +1,25 @@
+.keynav-type {
+	padding: 5px;
+	font-weight: bold;
+	font-size: 12pt;
+}
+
+.keynav-hotkeys {
+	padding: 0 5px;
+}
+
+.keynav-hotkey {
+	margin: 5px 0;
+}
+
+.keynav-hotkey span:first-child {
+	padding: 2px 4px;
+	color: rgba(65, 65, 65, .8);
+	text-shadow: #ccc 0 0 3px;
+	background-color: rgb(200, 200, 200);
+	box-shadow: 0px 0px 4px 1px rgba(128, 128, 128, .6);
+}
+
+.keynav-hotkey span:last-child {
+
+}

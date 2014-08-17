@@ -1,0 +1,2 @@
+127.0.0.1 - - [03/Mar/2012:20:59:29 +0200] "GET /php/library.php?query=library&library=allmusic HTTP/1.1" 200 115350 "http://localplayer/" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11"
+127.0.0.1 - - [03/Mar/2012:20:59:34 +0200] "GET /libraries/allmusic/audio/Zebrahead%5CPhoenix%5C11%20The%20Junkie%20And%20The%20Halo.mp3 HTTP/1.1" 200 8334365 "http://localplayer/swf/soundmanager2_flash9.swf" "Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/535.11 (KHTML, like Gecko) Chrome/17.0.963.56 Safari/535.11"

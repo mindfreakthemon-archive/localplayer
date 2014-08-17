@@ -1,0 +1,268 @@
+/* Strategy styles */
+
+/* Artists */
+
+.artist {
+	padding: 5px 10px;
+}
+
+.artist-title {
+	padding-left: 5px;	
+}
+
+.artist-title > span {
+	cursor: pointer;	
+	padding: 0 3px;
+}
+
+/* Albums */
+
+.album {
+	margin: 5px 15px;
+	box-sizing: border-box;
+	display: block;
+}
+
+.album-cover {
+	padding: 5px;
+	width: 60px;
+	height: 60px;
+}
+
+.album-cover img {
+	width: 50px;
+	height: 50px;
+}
+
+.album-title {
+	height: 30px;
+}
+
+.album-title > span {
+	cursor: pointer;
+}
+
+/* Tracks */
+
+.track {
+	margin: 5px 30px 5px 70px;
+}
+
+.track table {
+	width: 100%;
+}
+
+.track td  {
+	text-align: left;
+	padding: 2px 5px;
+}
+
+
+.track:last-child {
+	/*margin-bottom: 20px;*/
+}
+
+.track-number {
+	width: 30px;
+}
+
+.track-title {
+
+}
+
+.track-stream {
+	width: 120px;
+}
+
+.track-rating {
+	width: 120px;
+}
+
+.track-title > span {
+	cursor: pointer;
+	white-space: nowrap;
+	overflow: hidden;
+	display: inline-block;
+}
+
+.track-options {
+	width: 40px;
+	line-height: 100%;
+	padding-bottom: 0 !important;
+	vertical-align: middle;
+}
+
+.track-options div.transitional-button,
+.track-options div.persistent-button {
+	display: inline-block;
+	height: 20px;
+	width: 30px;
+}
+
+.track-options div.transitional-button.active,
+.track-options div.persistent-button {
+	cursor: pointer;
+}
+
+/* Appearance styles */
+
+/* Artists */
+
+.artist-title {
+	color: #333;
+	text-shadow: rgba(126, 126, 126, .5) 0 0 3px;
+	font-size: 20pt;
+}
+
+.artist-title > span {
+	background-color: rgba(220, 220, 220, .7);
+}
+
+.artist .artist-title > span:hover {
+	background-color: rgba(220, 220, 220, .9);
+}
+
+.artist.nowplaying .artist-title > span {
+	background-color: rgba(220, 220, 220, 1);
+}
+
+/*
+.artist.nowplaying .artist-title > span:after {
+	content: " [nowplaying] ";
+	opacity: .5;
+}
+*/
+
+/* Albums */
+
+.album > table {
+	background-color: rgba(220, 220, 220, .7);
+}
+
+.album:hover > table {
+	background-color: rgba(220, 220, 220, 1);
+}
+
+.album.nowplaying > table {
+	background-color: rgba(220, 220, 220, 1);
+}
+
+/*
+.album.nowplaying .album-title > span:after {
+	content: " [nowplaying] ";
+	opacity: .5;
+}
+*/
+
+.album-cover img {
+	box-shadow: 0px 0px 10px 2px rgba(128, 128, 128, .6);
+}
+
+.album-title {
+	font-size: 13pt;
+	border-bottom: 1px outset grey;
+}
+
+.album-additional {
+	font-size: 11pt;
+	color: rgba(68, 68, 68, .7);
+}
+
+/* Tracks */
+
+.track {
+	background-color: rgba(220, 220, 220, .7);
+}
+
+.track.nowplaying {
+	background-color: rgba(220, 220, 220, 1);
+	/* background-color: rgba(128, 128, 128, .3); */
+}
+
+.track td {
+	font-size: 11pt;
+}
+
+.track-stream {
+	opacity: .5;
+}
+
+.track-rating {
+	position: relative;
+}
+
+.track-rating div {
+	position: absolute;
+	top: 0;
+	left: 5px;
+
+	background-repeat: repeat-x;
+	background-size: 22px 22px;
+	height: 22px;
+}
+
+.track-rating div:first-child {
+	width: 110px;
+	background-image: url("../img/starnok.png");
+	z-index: 1;
+}
+
+.track-rating div:last-child {
+	width: 0;
+	background-image: url("../img/starok.png");
+	z-index: 2;
+}
+
+.track-rating.rating-1 div:first-child {
+	margin-left: 22px;
+	width: 88px;
+}
+.track-rating.rating-2 div:last-child {
+	width: 22px;
+}
+
+.track-rating.rating-2 div:first-child {
+	margin-left: 44px;
+	width: 66px;
+}
+.track-rating.rating-2 div:last-child {
+	width: 44px;
+}
+
+.track-rating.rating-3 div:first-child {
+	margin-left: 66px;
+	width: 44px;
+}
+.track-rating.rating-3 div:last-child {
+	width: 66px;
+}
+
+.track-rating.rating-4 div:first-child {
+	margin-left: 88px;
+	width: 22px;
+}
+.track-rating.rating-4 div:last-child {
+	width: 88px;
+}
+
+.track-rating.rating-5 div:first-child {
+	width: 0;
+}
+.track-rating.rating-5 div:last-child {
+	width: 110px;
+}
+
+.track-options div.transitional-button, .track-options div.persistent-button {
+	opacity: .1;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: auto 11px;
+}
+
+.track-options div.transitional-button.active, .track-options div.persistent-button {
+	opacity: .4;
+}
+
+.track-options div.transitional-button.active:hover, .track-options div.persistent-button:hover {
+	background-color: rgba(166, 166, 166, .7) !important;
+}

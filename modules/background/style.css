@@ -1,0 +1,42 @@
+#controls-background.nopenope {
+	background-image: url('/img/icons/glyphicons_207_remove_2.png');
+}
+#controls-background.default {
+	background-image: url('/img/icons/glyphicons_011_camera.png');
+}
+#controls-background.squarepics {
+	background-image: url('/img/icons/glyphicons_094_vector_path_square.png');
+}
+#controls-background.personal {
+	background-image: url('/img/icons/glyphicons_003_user.png');
+}
+
+
+#background-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}
+
+#background-img img {
+	opacity: 0;
+}
+
+#background-img.img-personal img {
+	height: 100%;
+	width: 100%;
+}
+
+#background-img.img-square img {
+	
+}
+
+#background-img.img-stretch img {
+	min-width: 100%;
+	min-height: 100%;
+}

@@ -1,0 +1,17 @@
+/* Strategy styles */
+
+
+
+/* Appearance styles */
+
+#controls-order.nopenope {
+	background-image: url('/img/icons/glyphicons_207_remove_2.png');
+}
+
+#controls-order.linear {
+	background-image: url('/img/icons/glyphicons_156_show_thumbnails_with_lines.png');
+}
+
+#controls-order.shuffle {
+	background-image: url('/img/icons/glyphicons_083_random.png');
+}

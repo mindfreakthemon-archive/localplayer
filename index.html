@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Localplayer</title>
+
+		<script src="/js/json2.js"></script>
+		<script src="/js/jquery-1.7.2.min.js"></script>
+		<script src="/js/underscore-min.js"></script>
+		<script src="/js/underscore-min.string.js"></script>
+		<script src="/js/backbone-min.js"></script>
+		<script src="/js/soundmanager2-nodebug-jsmin.js"></script>
+		<script src="/js/moz-range.js"></script>
+		<script src="/js/localplayer.js"></script>
+
+		<script src="/app/track.js"></script>
+		<script src="/app/album.js"></script>
+		<script src="/app/artist.js"></script>
+		<script src="/app/library.js"></script>
+		<script src="/app/player.js"></script>
+
+		<script src="/js/bootstrap.js"></script>
+
+		<link rel="stylesheet" type="text/css" href="/css/common.css" />
+		<link rel="stylesheet" type="text/css" href="/css/playlist.css" />
+		<link rel="stylesheet" type="text/css" href="/css/player.css" />
+		<link rel="stylesheet" type="text/css" href="/css/player.style.css" />
+
+	</head>
+    <body class="no-select">
+		<img src="/img/bg.jpg" id="background-img" />
+
+		<div id="player-wrapper">
+			<div id="player">
+				<div id="controls">
+					<div class="timeline-span">
+						<div id="controls-playback" class="transitional-button oninit"></div>
+						<div id="controls-stop" class="transitional-button onplay"></div>
+					</div>
+					<div class="timeline-span">
+						<div id="controls-prev" class="transitional-button oninit"></div>
+						<div id="controls-next" class="transitional-button oninit"></div>
+					</div>
+					<div class="timeline-span">
+						<div id="controls-volmute" class="persistent-button"></div>
+						<input id="controls-volslider" type="range" min="0" max="100" step="1" value="100" />
+					</div>
+					<div class="timeline-span" id="controls-structures"></div>
+					<div class="timeline-span" id="controls-functions">
+						<div id="controls-visibility" class="persistent-button"></div>
+					</div>
+					<!-- -->
+					<div class="timeline-span" id="controls-status">
+						<span id="controls-status-played">0:00</span> <span id="controls-status-separator">/</span> <span id="controls-status-duration">0:00</span>
+					</div>
+				</div>
+				<div id="controls-timeline">
+					<div id="controls-loaded"></div>
+					<div id="controls-played"></div>
+					<div id="player-nowplaying"></div>
+					<div id="controls-seekbar" class="oninit"></div>
+					<div id="controls-popup" style="display: none;"></div>
+				</div>
+			</div>
+		</div>
+    </body>
+</html>

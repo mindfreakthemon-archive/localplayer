@@ -1,0 +1,6 @@
+#controls-title.nopenope {
+	background-image: url('/img/icons/glyphicons_207_remove_2.png');
+}
+#controls-title.default {
+	background-image: url('/img/icons/glyphicons_248_asterisk.png');
+}

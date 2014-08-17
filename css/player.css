@@ -1,0 +1,146 @@
+#player-wrapper {
+	position: fixed;
+	bottom: 0;
+	z-index: 3;
+
+	width: 100%;
+
+	box-sizing: border-box;
+	padding-right: 20px;
+}
+
+#player {
+	padding: 1px;
+}
+
+#controls {
+	opacity: 0;
+	height: 0;
+	margin: 0;
+}
+
+#player:hover #controls,
+#player.shown #controls {
+	opacity: 1;
+	height: 20px;
+	margin: 10px;
+}
+
+/* Timeline */
+
+#controls-timeline {
+	position: relative;
+	margin: 10px;
+	height: 20px;
+}
+
+#controls-loaded,
+#controls-seekbar,
+#controls-played {
+	position: absolute;
+	height: 100%;
+	width: 0;
+	left: 0;
+	top: 0;	
+}
+
+#controls-loaded {
+	z-index: 1;
+}
+
+#controls-played {
+	z-index: 2;
+}
+
+#player-nowplaying {
+	padding: 0 3px;
+	z-index: 3;
+}
+
+#controls-seekbar {
+	width: 100%;
+	z-index: 4;	
+}
+
+#controls-seekbar.active {
+	cursor: pointer;
+}
+
+#controls-popup {
+	display: inline-block;
+	padding: 0 4px;
+
+	position: absolute;
+	bottom: 20px;
+}
+
+/* Buttons */
+
+#controls {
+	position: relative;
+
+	-webkit-transition: height 0.2s, margin 0.2s;
+	-o-transition: height 0.2s, margin 0.2s;
+	-moz-transition: height 0.2s, margin 0.2s;
+	-m-transition: height 0.2s, margin 0.2s;
+	transition: height 0.2s, margin 0.2s;
+}
+
+#controls div.transitional-button,
+#controls div.persistent-button {
+	display: inline-block;
+	height: 100%;
+	width: 30px;
+}
+
+#controls div.transitional-button.active,
+#controls div.persistent-button {
+	cursor: pointer;
+}
+
+#controls-volslider {
+	height: 100%;
+	margin: 0 3px 0 0;
+	padding: 0;
+	border: none;
+}
+
+@media not all and (-webkit-min-device-pixel-ratio:0) {  
+	#controls-volslider {
+		position: relative;
+		top: -5px;
+	}
+}
+
+@-moz-document url-prefix() { 
+	#controls-volslider {
+		position: relative;
+		top: -5px;
+	}
+} 
+
+#controls div.timeline-span {
+	margin-right: 5px;
+
+	display: inline-block;
+	height: 100%;
+}
+
+#controls-status {
+	margin: 0;
+	padding: 0 5px;
+	float: right;
+}
+
+/* BG */
+
+#background-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+}

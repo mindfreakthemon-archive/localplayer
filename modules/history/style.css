@@ -1,0 +1,28 @@
+/* Strategy styles */
+
+div.history {
+	margin: 8px 10px;
+	padding: 0 3px;
+}
+
+/* Appearance styles */
+
+div.history {
+	cursor: pointer;
+	color: rgba(65, 65, 65, .8);
+	text-shadow: #ccc 0 0 3px;
+	background-color: rgb(200, 200, 200);
+	box-shadow: 0px 0px 4px 1px rgba(128, 128, 128, .6);
+}
+
+div.history.active {
+	background-color: rgb(230, 230, 230);
+}
+
+#controls-history.nopenope {
+	background-image: url('/img/icons/glyphicons_207_remove_2.png');
+}
+
+#controls-history.default {
+	background-image: url('/img/icons/glyphicons_151_edit.png');
+}
